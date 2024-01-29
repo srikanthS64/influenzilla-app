@@ -1,13 +1,15 @@
-import React from 'react'
-import header1 from "../../assets/imgs/header-1.png"
-import img1 from "../../assets/imgs/img-1.png"
-import banner1 from "../../assets/imgs/banner-1.png"
-import banner2 from "../../assets/imgs/banner-2.png"
-import banner3 from "../../assets/imgs/banner-3.png"
-import banner4 from "../../assets/imgs/banner-4.png"
-import header2 from "../../assets/imgs/header-2.png"
-import Navbar from '../../components/Navbar/navbar'
-import Footer from "../../components/Footer/footer"
+import React from 'react';
+import header1 from "../../assets/imgs/header-1.png";
+import img1 from "../../assets/imgs/img-1.png";
+import img2 from "../../assets/imgs/img-2.png";
+import img3 from "../../assets/imgs/img-3.png";
+import banner1 from "../../assets/imgs/banner-1.png";
+import banner2 from "../../assets/imgs/banner-2.png";
+import banner3 from "../../assets/imgs/banner-3.png";
+import banner4 from "../../assets/imgs/banner-4.png";
+import header2 from "../../assets/imgs/header-2.png";
+import Navbar from '../../components/Navbar/navbar';
+import Footer from "../../components/Footer/footer";
 const home = () => {
     return (
         <div className="bg-neutral-900 flex flex-col pb-12">
@@ -121,7 +123,7 @@ const home = () => {
                                 </div>
                             </div>
                         </div>{" "}
-                        <div className="flex bg-[#202020] flex-col items-center self-center justify-center ml-52 w-[23%] max-md:w-full max-md:ml-0 lg:hidden">
+                        <div className="flex bg-[#202020] flex-col items-center self-center justify-center ml-52 w-[23%] max-md:w-full max-md:ml-0 ">
                             <img
                                 loading="lazy"
                                 srcSet={img1} alt='img1'
@@ -264,13 +266,13 @@ const home = () => {
                         </div>
                         <div className="mt-9 max-md:max-w-full">
                             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
-                                <div className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
+                                <div className="flex flex-col items-stretch w-[40%] max-md:w-full max-md:ml-0">
                                     <div className="flex grow flex-col w-full pt-11 border-2 border-solid border-white items-start">
-                                        <div>
+                                        <div className=' flex justify-center items-center self-center mt-7'>
                                             <img
                                                 loading="lazy"
                                                 srcSet={img1} alt='img1'
-                                                className="aspect-square object-contain object-center w-[40%] overflow-hidden max-w-full ml-12 max-md:ml-2.5"
+                                                className="aspect-square object-contain object-center w-[30%] overflow-hidden max-w-full  max-md:ml-2.5"
                                             />
                                         </div>
                                         <div className="self-stretch flex flex-col items-stretch mt-14 pl-12 pr-20 py-11 border-t-2 border-solid border-white max-md:mt-10 max-md:px-5">
@@ -284,21 +286,17 @@ const home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
-                                    <div className="flex grow flex-col w-full pt-11 border-2 border-solid border-white items-start">
-                                        <div className=' flex'>
+                                <div className="flex flex-col items-stretch w-[40%] ml-5 max-md:w-full max-md:ml-0">
+                                    <div className="flex grow flex-col w-ful pt-11 border-2 border-solid border-white items-start">
+                                        <div className=' flex justify-center items-center self-center -mt-3'>
                                             <img
                                                 loading="lazy"
-                                                srcSet={img1} alt='img1'
-                                                className="aspect-square object-contain object-center w-[40%] overflow-hidden max-w-full ml-12 max-md:ml-2.5"
+                                                srcSet={img2} alt='img2'
+                                                className="aspect-square object-contain object-center w-[40%] overflow-hidden max-w-full  max-md:ml-2.5 "
                                             />
-                                            <img
-                                                loading="lazy"
-                                                srcSet={img1} alt='img1'
-                                                className="aspect-square object-contain absolute object-center w-[8%]  overflow-hidden max-w-full ml-20 max-md:ml-2.5 -mt-0.5"
-                                            />
+
                                         </div>
-                                        <div className="self-stretch flex flex-col mt-14 pl-12 pr-20 py-11 border-t-2 border-solid border-white items-start max-md:mt-10 max-md:px-5">
+                                        <div className="self-stretch flex flex-col mt-10 pl-12 pr-20 py-11 border-t-2 border-solid border-white items-start max-md:mt-10 max-md:px-5">
                                             <div className="text-3xl font-light bg-clip-text whitespace-nowrap title">
                                                 Design
                                             </div>
@@ -309,24 +307,18 @@ const home = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0">
+                                <div className="flex flex-col items-stretch w-[40%] ml-5 max-md:w-full max-md:ml-0">
                                     <div className="flex grow flex-col w-full pt-8 border-2 border-solid border-white items-start">
-                                        <img
-                                            loading="lazy"
-                                            srcSet={img1} alt='img1'
-                                            className="aspect-square object-contain object-center w-[40%] overflow-hidden max-w-full ml-12 max-md:ml-2.5"
-                                        />
-                                        <img
-                                            loading="lazy"
-                                            srcSet={img1} alt='img1'
-                                            className="aspect-square object-contain absolute object-center w-[8%]  overflow-hidden max-w-full ml-20 max-md:ml-2.5 mt-0.5"
-                                        />
-                                        <img
-                                            loading="lazy"
-                                            srcSet={img1} alt='img1'
-                                            className="aspect-square object-contain absolute object-center w-[8%]  overflow-hidden max-w-full ml-28 max-md:ml-2.5 mt-0.5"
-                                        />
-                                        <div className="self-stretch flex flex-col items-stretch mt-14 pl-12 pr-20 py-11 border-t-2 border-solid border-white max-md:mt-10 max-md:px-5">
+                                        <div className=' flex justify-center items-center self-center'>
+                                            <img
+                                                loading="lazy"
+                                                srcSet={img3} alt='img3'
+                                                className="aspect-square object-contain object-center w-[40%] overflow-hidden max-w-full  max-md:ml-2.5"
+                                            />
+                                        </div>
+
+
+                                        <div className="self-stretch flex flex-col items-stretch mt-10 pl-12 pr-20 py-11 border-t-2 border-solid border-white max-md:mt-10 max-md:px-5">
                                             <div className="text-3xl font-light bg-clip-text whitespace-nowrap title">
                                                 Marketing
                                             </div>
@@ -363,7 +355,7 @@ const home = () => {
                         hi there, let's get started!
                     </h1>{" "}
                     <div className="flex items-stretch justify-between gap-5">
-                        <h1 className="text-white text-xs title w-20">
+                        <h1 className="text-white text-xs title w-20 max-sm:hidden">
                             hi there, let's get started!
                         </h1>
                         <h1 className="text-white text-xs title w-20">
@@ -373,7 +365,7 @@ const home = () => {
                 </div>{" "}
                 <div className="relative flex w-full max-w-[1169px] items-stretch justify-between gap-5 mt-40 mb-5 max-md:max-w-full max-md:flex-wrap max-md:mt-10">
                     <div className="flex flex-col items-end max-md:max-w-full">
-                        <p className="justify-center text-5xl font-light tracking-tighter bg-clip-text max-md:text-4xl title">
+                        <p className="justify-center text-5xl font-light tracking-tighter bg-clip-text max-md:text-4xl title max-sm:hidden">
                             ˜˜˜˜˜˜˜˜
                         </p>{" "}
                         <h1 className="justify-center text-6xl font-light bg-clip-text self-stretch mt-2 max-md:max-w-full max-md:text-4xl title w-[350px]">
